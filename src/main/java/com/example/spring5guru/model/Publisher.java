@@ -1,6 +1,7 @@
 package com.example.spring5guru.model;
 
 import lombok.EqualsAndHashCode;
+import lombok.EqualsAndHashCode.Include;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -17,6 +18,7 @@ import java.util.Set;
 public class Publisher {
     @Id
     @GeneratedValue
+    @Include
     private long id;
 
     private String name;
